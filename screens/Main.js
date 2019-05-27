@@ -102,7 +102,6 @@ export default class Main extends React.Component {
         let user = await AsyncStorage.getItem("array1");
         let next = await JSON.parse(user)
         this.setState({ ats: next, refreshing: false, })
-        console.log(this.state.ats)
     }
     componentWillMount() {
         this.saveItem();
